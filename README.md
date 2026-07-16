@@ -1,9 +1,23 @@
-# Upstage DocuParse (MVP)
+# HWP Document AI Parser (MVP, Upstage Document Parse API)
 
-KC 안전기준 등 복잡한 문서(**한국 HWP/HWPX**, PDF, 이미지 포함)를 디지털화하고, 정보를 추출하며, 사람이 검증하는 Document AI 도구입니다.
-**Upstage Document Parse API** 및 **Information Extraction API**의 전체 기능을 활용합니다.
+## 배경
 
-> **한 줄 요약**: 문서 업로드 → AI가 구조 분석 → 원하는 정보 추출 → 사람이 확인/수정 → JSON/CSV 내보내기
+정부 문서 사실상 표준포맷인 HWP는 대부분의 AI 파이프라인에서 파싱 장벽으로
+작용한다. 본 MVP는 HWP 문서의 AI 파싱 기술 타당성을 외주 계약 체결 전에
+발주 담당자가 자체 검증하기 위해 구축한 것으로, R&D 추진 여부 판단과
+수행기관 협상의 기초 자료로 활용되었다.
+
+기술 검증 범위: Upstage Document Parse API 기반 HWP 구조 추출,
+표·서식 보존 여부, 처리 단가 추정.
+
+> Built by a government procurement officer to independently verify the
+> technical feasibility of AI-based HWP parsing *before* contracting,
+> and used as groundwork for R&D negotiation.
+
+
+
+
+> **기술 요약**: 문서 업로드 → AI가 구조 분석 → 원하는 정보 추출 → 사람이 확인/수정 → JSON/CSV 내보내기
 
 ---
 
