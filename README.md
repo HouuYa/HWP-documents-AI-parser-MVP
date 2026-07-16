@@ -2,26 +2,19 @@
 
 ## 배경
 
-정부 문서 사실상 표준포맷인 HWP는 대부분의 AI 파이프라인에서 파싱 장벽으로
-작용한다. 본 MVP는 HWP 문서의 AI 파싱 기술 타당성을 외주 계약 체결 전에
-발주 담당자가 자체 검증하기 위해 구축한 것으로, R&D 추진 여부 판단과
-수행기관 협상의 기초 자료로 활용되었다.
+- 정부 문서 사실상 표준포맷인 HWP는 대부분의 AI 파이프라인에서 파싱 장벽으로 작용
+- 본 MVP(Minimum Viable Product, 최소 핵심기능 구현 제품)는 제품의 HWP포맷의 안전기준 문서에 대한 AI 파싱 기술 개발을 외주로 계약 체결 전에 자체적으로 구축
+- 개발 기간, 예산 등을 검증하여 외주(R&D) 추진 여부 판단과 외주 수행기관과의 협상 기초 자료로 활용
 
-기술 검증 범위: Upstage Document Parse API 기반 HWP 구조 추출,
-표·서식 보존 여부, 처리 단가 추정.
+**기술 검증 범위**: Upstage Document Parse API 기반 HWP 구조 추출, 표·서식 보존 여부, 처리 단가 추정.
 
-> Built by a government procurement officer to independently verify the
-> technical feasibility of AI-based HWP parsing *before* contracting,
-> and used as groundwork for R&D negotiation.
-
-
-
-
-> **기술 요약**: 문서 업로드 → AI가 구조 분석 → 원하는 정보 추출 → 사람이 확인/수정 → JSON/CSV 내보내기
+> Built by a government procurement officer to independently verify the technical feasibility of AI-based HWP parsing *before* contracting, and used as groundwork for R&D negotiation.
 
 ---
 
 ## 전체 워크플로우 (3단계)
+> **요약**: HWP/HWPX문서로 된 법정 안전기준 업로드 → AI가 구조 분석 → 원하는 정보 추출 → 사람이 확인/수정 → JSON/CSV 내보내기
+
 
 ```
 ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
