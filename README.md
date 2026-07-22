@@ -1,4 +1,4 @@
-# HWP Document AI Parser (MVP, Upstage Document Parse API)
+# HWP Document AI Parser (MVP, Upstage Document Parse API 활용)
 
 ## 배경
 
